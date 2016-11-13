@@ -1,0 +1,31 @@
+
+name:                render-latex-template
+version:             "0.1.0"
+license:             MIT
+license-file:        LICENSE
+author:              Max Taldykin
+maintainer:          jorpic@gmail.com
+category:            Text
+
+
+dependencies:
+  - aeson
+  - base
+
+
+default-extensions:
+  - OverloadedStrings
+  - LambdaCase
+
+
+ghc-options:
+  - -Wall
+  - -threaded
+  - -O2
+  - -funbox-strict-fields
+
+
+executables:
+  rlt:
+    source-dirs: src
+    main: Main.hs
