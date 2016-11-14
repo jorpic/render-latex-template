@@ -11,11 +11,15 @@ category:            Text
 dependencies:
   - aeson
   - base
+  - configurator
+  - process
+  - unordered-containers
 
 
 default-extensions:
   - OverloadedStrings
   - LambdaCase
+  - RecordWildCards
 
 
 ghc-options:
