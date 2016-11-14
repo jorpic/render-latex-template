@@ -12,7 +12,12 @@ dependencies:
   - aeson
   - base
   - configurator
+  - directory
+  - ede
+  - filepath
+  - lens
   - process
+  - text
   - unordered-containers
 
 
