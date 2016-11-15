@@ -27,3 +27,16 @@ $ curl -s -O \
 $ ls *.pdf
 6b44c6c1-2c51-4efc-a5f0-705b48dd5213.pdf
 ```
+
+
+Templating syntax
+-----------------
+
+FIXME: text & examples
+
+```
+  = EDE.delimInline  .~ ("\\param{", "}")
+  $ EDE.delimPragma  .~ ("%% !EDE:", "\n")
+  $ EDE.delimBlock   .~ ("%% %EDE:", "\n")
+  $ EDE.delimComment .~ ("%% #EDE:", "\n")
+```
