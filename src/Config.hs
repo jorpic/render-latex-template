@@ -11,5 +11,6 @@ data Config = Config
   , workDir     :: FilePath
   , docDir      :: FilePath
   , renderCmd   :: String
+  , httpPort    :: Int
   }
   deriving Generic

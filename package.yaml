@@ -19,14 +19,20 @@ dependencies:
   - guid
   - lens
   - process
+  - servant-server
   - text
+  - transformers
   - unordered-containers
+  - warp
 
 
 default-extensions:
   - OverloadedStrings
   - LambdaCase
   - RecordWildCards
+  - NamedFieldPuns
+  - DataKinds
+  - TypeOperators
 
 
 ghc-options:

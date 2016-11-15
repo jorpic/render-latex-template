@@ -1,10 +1,7 @@
 
 module Utils where
 
-import           System.IO (hPutStrLn, stderr)
-
-is :: Bool -> Bool
-is = id
+import System.IO (hPutStrLn, stderr)
 
 report :: String -> IO ()
 report = hPutStrLn stderr
