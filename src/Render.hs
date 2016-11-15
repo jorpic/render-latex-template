@@ -37,10 +37,10 @@ renderTemplates dir (Object obj)
 renderTemplates _ _val = report "Invalid json data" >> return []
 
 
-renderPdf :: Config -> IO ()
-renderPdf (Config {..}) = do
+renderPdf :: Config -> FilePath -> IO ()
+renderPdf (Config {..}) srcDir = do
   (code, _sOut, _sErr) <- P.readCreateProcessWithExitCode
-    (P.shell renderCmd) {P.cwd = Just templateDir}
+    (P.shell renderCmd) {P.cwd = Just srcDir}
     ""
   case code of
     ExitFailure _err -> return ()

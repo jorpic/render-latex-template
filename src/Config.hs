@@ -8,7 +8,8 @@ import GHC.Generics
 
 data Config = Config
   { templateDir :: FilePath
-  , resultDir   :: FilePath
+  , workDir     :: FilePath
+  , docDir      :: FilePath
   , renderCmd   :: String
   }
   deriving Generic

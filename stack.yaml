@@ -1,9 +1,14 @@
 resolver: lts-7.8
 
 packages:
-- '.'
+  - '.'
+  - location:
+      git: git@github.com:jorpic/fsutils
+      commit: HEAD
 
-extra-deps: []
+
+extra-deps:
+  - guid-0.1.0
 
 flags: {}
 
